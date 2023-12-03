@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image streganography</title>
+</head>
+
+<body>
+    <main>
+        <h1>image streganography</h1>
+        <div class="input_container">
+            <input type="file" name="img" id="user_img" accept="image/*" onchange="ReadUrl(this)">
+        </div>
+        <div class="display_user_img">
+            <img src="" alt="" class="display_img">
+        </div>
+        <div>
+            <input type="text" name="" id="text" />
+            <button class="btn" onclick="hideText()">hide message</button>
+        </div>
+        <div class="encode_img_container">
+            <h2>source image</h2>
+            <img src="" alt="" id="encode_img"/>
+        </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/steganography.min.js"></script>
+
+</body>
+
+</html>

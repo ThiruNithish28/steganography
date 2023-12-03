@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image streganography</title>
+</head>
+<body>
+    <main class="container">
+        <h1>decode the message</h1>
+        <div>
+            <input type="file" name="" id="img_to_decode" accept="image/*" onchange="ReadUrl(this)"/>
+            <button onclick="decode_msg()">decode the image</button>
+        </div>
+
+        <div class="hide_text">
+
+        </div>
+    </main>
+    <script src="./js/decode.js"></script>
+    <script src="./js/steganography.min.js"></script>
+</body>

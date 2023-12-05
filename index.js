@@ -43,7 +43,9 @@ app.post("/register", async (req, res) => {
 });
 //encode
 app.post("/encode", async (req, res) => {
-  const { t_id, key, msg, auth_user, photo } = req.body;
+  const { photo } = req.body;
+  console.log(req.body);
+  console.log(photo);
 });
 
 //decode

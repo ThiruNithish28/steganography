@@ -41,5 +41,13 @@ app.post("/register", async (req, res) => {
     res.sendFile(__dirname + "/pages/register.html");
   }
 });
+//encode
+app.post("/encode", async (req, res) => {
+  const { t_id, key, msg, auth_user, photo } = req.body;
+});
 
+//decode
+app.post("/decode", async (req, res) => {
+  const { t_id, key } = req.body;
+});
 app.listen(3000, () => console.log("Connected to the port 3000..."));
